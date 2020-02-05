@@ -1,0 +1,18 @@
+﻿@{
+    foreach (var item in Model.CPUs)
+    { 
+        <div class="row productContainer">
+            <div class="col-md-6 imageContainer">
+                <img src="@item.Img" alt="@item.Name" />
+            </div>
+            <div class="col-md-6 parameterContainer">
+                <div class="productParameter product-name">@item.Name</div>
+                <div class="productParameter">Clock Frequency: @item.ClockFrequency</div>
+                <div class="productParameter">Core Number: @item.CoreNumber</div>
+                <div class="productParameter">Thread Number: @item.ThreadNumber</div>
+                <div class="productParameter product-price">@item.Price ₴</div>
+            </div>
+        </div>
+    }
+}
+

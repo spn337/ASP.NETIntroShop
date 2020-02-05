@@ -1,0 +1,17 @@
+﻿@{
+    foreach (var item in Model.Phones)
+    {
+        <div class="row productContainer">
+            <div class="col-md-6 imageContainer">
+                <img src="@item.Img" alt="@item.Name" />
+            </div>
+            <div class="col-md-6 parameterContainer">
+                <div class="productParameter product-name">@item.Name</div>
+                <div class="productParameter">Size of screen: @item.SizeScreen</div>
+                <div class="productParameter">Memory: @item.Memory</div>
+                <div class="productParameter">Camera: @item.Camera</div>
+                <div class="productParameter product-price">@item.Price ₴</div>
+            </div>
+        </div>
+    }
+}

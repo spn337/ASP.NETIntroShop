@@ -1,0 +1,18 @@
+﻿@{
+    foreach (var item in Model.GPUs)
+    {
+        <div class="row productContainer">
+            <div class="col-md-6 imageContainer">
+                <img src="@item.Img" alt="@item.Name" />
+            </div>
+            <div class="col-md-6 parameterContainer">
+                <div class="productParameter product-name">@item.Name</div>
+                <div class="productParameter">Memory: @item.MemorySize Gb</div>
+                <div class="productParameter">Memory Frequency: @item.MemoryFrequency Mgz</div>
+                <div class="productParameter">Core Frequency: @item.CoreFrequency Mgz</div>
+                <div class="productParameter">Memory Bus Bit: @item.MemoryBusBit bit</div>
+                <div class="productParameter product-price">@item.Price ₴</div>
+            </div>
+        </div>
+    }
+}
